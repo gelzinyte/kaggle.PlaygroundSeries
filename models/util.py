@@ -1,4 +1,5 @@
 import logging
+import warnings
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
@@ -46,9 +47,10 @@ def plot_correlation(reference, predicted, out_fn="correlation.png"):
     ax.set_title("RMSE")
     adjust_ax(ax)
     
-    
-    plt.tight_layout()
-    plt.savefig(out_fn, dpi=300)
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore", category=UserWarning) 
+        plt.tight_layout()
+        plt.savefig(out_fn, dpi=300)
 
 
  
