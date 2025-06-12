@@ -1,0 +1,8 @@
+
+
+
+- decision trees
+    - max_depth  min_samples_leaf  rmse  Notes 
+      None       2                 1.88  extrapolates better on kaggle tests   
+      None       1                 0.22
+      30         1                 0.23

@@ -1,5 +1,7 @@
 # 
 .DS_Store
+*.pkl
+*.tree
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
