@@ -1,4 +1,5 @@
 # 
+challenge_data/
 .DS_Store
 *.pkl
 *.tree
